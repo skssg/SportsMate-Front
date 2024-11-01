@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const BigThreeContainer = styled.div`
-   .bigthree-container {
+    .bigthree-container {
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -9,33 +9,31 @@ const BigThreeContainer = styled.div`
         margin-bottom: 15px;
     }
 
-    .silver {
-        background-color: #CCCCCC;
+    .silver, .gold, .bronze {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+        align-items: center;
         border-radius: 8px;
         width: 100px;
-        height: 60px;
-        position: relative;
         color: white;
+        position: relative;
+    }
+
+    .silver {
+        background-color: #CCCCCC;
+        height: 60px;
     }
 
     .gold {
         background-color: #F4CD67;
-        border-radius: 8px;
-        width: 100px;
         height: 80px;
-        position: relative;
-        color: white;
     }
 
     .bronze {
         background-color: #C07D52;
-        border-radius: 8px;
-        width: 100px;
         height: 60px;
-        position: relative;
-        color: white;
     }
-
 `;
 
 const BigThree = () => {

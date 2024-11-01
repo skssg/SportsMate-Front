@@ -10,6 +10,10 @@ import Record from '../components/Record';
 import Ranking from '../components/Ranking';
 import Matching from '../components/Matching';
 import Footer from '../components/Footer';
+import AppNav from '../components/AppNav';
+import AppBanner from '../components/AppBanner';
+import AppMatching from '../components/AppMatching';
+import AppHeader from '../components/AppHeader';
 
 const MainPageContainer = styled.div`
    body {
@@ -34,15 +38,15 @@ const MainPage = () => {
   return (
     <MainPageContainer>
       <div className="container">
-          <Header />
-          <Nav />
-          <Banner />
+          {isMobile ? <AppHeader/> : <Header />}
+          {isMobile ? <AppNav /> : <Nav />}
+          {isMobile ? <AppBanner /> : <Banner />}
           <SelectType />
           <div className="webflex">
               <Record />
               <Ranking />
           </div>
-          <Matching />
+          {isMobile ? <AppMatching /> : <Matching />}
           <Footer />
       </div>
     </MainPageContainer>

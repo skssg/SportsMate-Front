@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import bannerImg from '../images/event-banner.png'
 
-const BannerContainer = styled.div`
+const AppBannerContainer = styled.div`
    .banner-img-box {
         width: 100%;
-        height: 400px;
+        height: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -15,16 +15,16 @@ const BannerContainer = styled.div`
     }
 `;
 
-const Banner = () => {
+const AppBanner = () => {
     return (
-        <BannerContainer>
+        <AppBannerContainer>
             <div className="banner-img">
                 <div className="banner-img-box">
                     <img src={bannerImg} alt="배너"/>
                 </div>
             </div>
-        </BannerContainer>
+        </AppBannerContainer>
     );
 };
 
-export default Banner
+export default AppBanner

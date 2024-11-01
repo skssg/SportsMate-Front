@@ -6,7 +6,7 @@ import MatchingTable from './MatchingTable';
 import MatchingDate from './MatchingDate';
 import matchingWaiting from '../images/matching-waiting.png'
 
-const MatchingContainer = styled.div`
+const AppMatchingContainer = styled.div`
     .matching-img-box {
         width: 100%;
         height: 100px;
@@ -29,14 +29,14 @@ const MatchingContainer = styled.div`
     }
 
     img {
-        max-width: 400px;
+        max-width: 100%;
         max-height: 100%;
     }
 `;
 
-const Matching = () => {
+const AppMatching = () => {
     return (
-        <MatchingContainer>
+        <AppMatchingContainer>
             <div className="matching-container">
                 <div className="matching-img">
                     <div className="matching-img-box">
@@ -48,8 +48,8 @@ const Matching = () => {
                 <MatchingTime />
                 <MatchingTable />
             </div>
-        </MatchingContainer>
+        </AppMatchingContainer>
     );
 };
 
-export default Matching
+export default AppMatching

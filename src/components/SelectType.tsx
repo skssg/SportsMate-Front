@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 const SelectTypeContainer = styled.div`
+    .select-btn {
+        width: 80%;
+        margin: 10px 10px 10px 10px;
+        text-align: center;
+    }
+
    .select-btn button {
         background-color: white;
         border-style: none;

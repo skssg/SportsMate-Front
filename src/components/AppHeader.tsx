@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import HeaderSearch from './input/HeaderSearch';
 import HeaderUser from './button/HeaderUser';
 import HeaderLogo from './button/HeaderLogo';
+import AppHeaderSearch from './input/AppHeaderSearch';
 
-const HeaderContainer = styled.div`
+const AppHeaderContainer = styled.div`
    .header {
         display: flex;
         justify-content: space-between;
@@ -14,16 +15,16 @@ const HeaderContainer = styled.div`
     }
 `;
 
-const Header = () => {
+const AppHeader = () => {
     return (
-        <HeaderContainer>
+        <AppHeaderContainer>
             <div className="header">
                 <HeaderLogo />
-                <HeaderSearch />
                 <HeaderUser />
             </div>
-        </HeaderContainer>
+                <AppHeaderSearch />
+        </AppHeaderContainer>
     )
 }
 
-export default Header
+export default AppHeader

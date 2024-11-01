@@ -1,14 +1,7 @@
 import styled from 'styled-components';
-import RankingListDetail from './li/RankingListDetail';
 
-const RankingListContainer = styled.div`
-   .ranking-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .ranking-list li {
+const RankingListDetailContainer = styled.div`
+   .ranking-list li {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -46,16 +39,19 @@ const RankingListContainer = styled.div`
     }
 `;
 
-const RankingList = () => {
+const RankingListDetail = () => {
     return (
-        <RankingListContainer>
-            <ul className="ranking-list">
-                <RankingListDetail />
-                <RankingListDetail />
-                <RankingListDetail />
-            </ul>
-        </RankingListContainer>
+        <RankingListDetailContainer>
+            <div className="rankListDetailcss">
+                <li>
+                    <span className="rank">4</span>
+                    <img src="team_logo1.png" alt="Team Logo" />
+                    <span className="team-name">우리동네FC</span>
+                    <span className="points">Point 1389</span>
+                </li>
+            </div>
+        </RankingListDetailContainer>
     )
 }
 
-export default RankingList
+export default RankingListDetail

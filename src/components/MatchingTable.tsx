@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import MatchBtn from './button/MatchBtn';
+import MatchTable from './tr/MatchTable';
 
 const MatchingTableContainer = styled.div`
    .tableContainer {
@@ -9,7 +11,7 @@ const MatchingTableContainer = styled.div`
         margin-bottom: 90px;
 
         @media (min-width: 768px) {
-            width: 80%;
+            width: 60%;
         }
     }
 
@@ -33,13 +35,12 @@ const MatchingTableContainer = styled.div`
         font-size: 12px;
     }
 
-    .match-btn {
-        padding: 5px 10px;
-        background-color: #3DABFF;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+    td:nth-child(3) {
+        font-size: 12px;
+        text-align: center;
+        display: flex;            /* 버튼을 중앙 정렬하기 위한 flex 설정 */
+        justify-content: center;   /* 가로 가운데 정렬 */
+        align-items: center;       /* 세로 가운데 정렬 */
     }
 
     .match-btn:hover {
@@ -52,31 +53,11 @@ const MatchingTable = () => {
         <MatchingTableContainer>
         <div className="tableContainer">
             <table>
-                <tr>
-                    <td>18 : 00</td>
-                    <td>서울 영등포 EA SPORTS FC(더에프필드) B구장</td>
-                    <td><button className="match-btn">매칭 신청</button></td>
-                </tr>
-                <tr>
-                    <td>18 : 00</td>
-                    <td>서울 강동 송파 풋살장</td>
-                    <td><button className="match-btn">매칭 신청</button></td>
-                </tr>
-                <tr>
-                    <td>19 : 00</td>
-                    <td>서울 영등포 EA SPORTS FC(더에프필드) B구장</td>
-                    <td><button className="match-btn">매칭 신청</button></td>
-                </tr>
-                <tr>
-                    <td>19 : 00</td>
-                    <td>서울 강동 송파 풋살장</td>
-                    <td><button className="match-btn">매칭 신청</button></td>
-                </tr>
-                <tr>
-                    <td>20 : 00</td>
-                    <td>서울 영등포 EA SPORTS FC(더에프필드) B구장</td>
-                    <td><button className="match-btn">매칭 신청</button></td>
-                </tr>
+                <MatchTable />
+                <MatchTable />
+                <MatchTable />
+                <MatchTable />
+                <MatchTable />
             </table>
         </div>
         </MatchingTableContainer>
