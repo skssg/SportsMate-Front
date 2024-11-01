@@ -1,0 +1,24 @@
+.bot-menu img{
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.bot-menu {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 30px);
+    height: 60px;
+    padding: 10px 15px;
+    border: 1px solid #cccccc;
+    border-style: solid none none none;
+    position: fixed;
+    bottom: 0;
+    background: white;
+}
+
+.bot-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}

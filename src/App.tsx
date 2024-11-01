@@ -1,19 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import MainPage from "./pages/MainPage";
-import LoginPage from "./pages/LoginPage";
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/frames/Header';
+import SearchBar from './components/commons/SearchBar';
+import "./styles/commons/searchBar.css"
+import BottomMenu from './components/frames/BottomMenu';
+import "./styles/commons/bottomMenu.css"
+import EvBanner from './components/EvBanner';
+import "./styles/commons/evBanner.css"
+import Category from './components/commons/Category';
+import Rank from './components/Rank';
 
 function App() {
-    return (
-        <div className="App">
-            <Routes>
-                <Route path={"/"} element={<MainPage/>}/>
-                <Route path={"/login.me"} element={<LoginPage/>}/>
-            </Routes>
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <div>
+          <Header />
+          <SearchBar />
         </div>
-    );
+        <div>
+          <br />
+          <EvBanner />
+        </div>
+        <div>
+        <br />
+          <Category />
+        </div>
+        <div>
+          <Rank />
+        </div>
+        <div>
+          <BottomMenu />
+        </div>
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;
