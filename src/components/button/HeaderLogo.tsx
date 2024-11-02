@@ -3,9 +3,9 @@ import Logo from '../../images/Logo.png';
 
 const HeaderLogoContainer = styled.div`
     text-align: center;
-   img {
-        width: 50px;
-    }
+    img {
+            width: 50px;
+        }
     font-family: "Bebas Neue", sans-serif;
     font-size: 50px;
 
