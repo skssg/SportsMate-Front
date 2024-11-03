@@ -1,18 +1,19 @@
 import React from 'react'
 import { Carousel } from 'antd';
+import { EvBannerDiv } from '../styles/commons/EvBannerStyled';
 
 const contentStyle: React.CSSProperties = {
   margin: 0,
-  height: '160px',
+  height: '200px',
   color: '#fff',
-  lineHeight: '160px',
+  lineHeight: '200px',
   textAlign: 'center',
   background: '#364d79',
 };
 
 const EvBanner = () => {
   return (
-    <div className='ev-div'>
+    <EvBannerDiv>
         <Carousel arrows infinite={false}>
             <div>
                 <h3 style={contentStyle}>1</h3>
@@ -27,7 +28,7 @@ const EvBanner = () => {
                 <h3 style={contentStyle}>4</h3>
             </div>
         </Carousel>
-    </div>
+    </EvBannerDiv>
   )
 }
 

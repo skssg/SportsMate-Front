@@ -4,55 +4,56 @@ import HomeImg from '../../images/commons/Home.png'
 import RankImg from '../../images/commons/Rank.png'
 import TeamImg from '../../images/commons/Team.png'
 import CommunityImg from '../../images/commons/Community.png'
+import { BotBtn, BotImg, BotMenu } from '../../styles/commons/BotMenuStyled'
 
 const BottomMenu = () => {
   return (
-    <div className='bot-menu'>
-      <div className='bot-btn'>
+    <BotMenu>
+      <BotBtn>
         <div>
-          <img src={GroundImg} alt="" />
+          <BotImg src={GroundImg} />
         </div>
         <div>
           구장
         </div>
-      </div>
+      </BotBtn>
 
-      <div className='bot-btn'>
+      <BotBtn>
         <div>
-          <img src={TeamImg} alt="" />
+          <BotImg src={TeamImg} />
         </div>
         <div>
           구단메뉴
         </div>
-      </div>
+      </BotBtn>
 
-      <div className='bot-btn'>
+      <BotBtn>
         <div>
-          <img src={HomeImg} alt="" />
+          <BotImg src={HomeImg} />
         </div>
         <div>
           홈
         </div>
-      </div>
+      </BotBtn>
 
-      <div className='bot-btn'>
+      <BotBtn>
         <div>
-          <img src={CommunityImg} alt="" />
+          <BotImg src={CommunityImg} />
         </div>
         <div>
           커뮤니티
         </div>
-      </div>
+      </BotBtn>
 
-      <div className='bot-btn'>
+      <BotBtn>
         <div>
-          <img src={RankImg} alt="" />
+          <BotImg src={RankImg} />
         </div>
         <div>
           랭킹
         </div>
-      </div>
-    </div>
+      </BotBtn>
+    </BotMenu>
   )
 }
 

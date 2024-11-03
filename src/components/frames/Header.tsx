@@ -1,19 +1,18 @@
 import React from 'react'
 import Logo from '../commons/Logo'
 import LoginBtn from '../commons/LoginBtn'
-import "../../styles/commons/header.css"
-import { LogoDiv } from '../../styles/commons/HeaderStyled'
+import { HeaderDiv, LoginDiv, LogoDiv } from '../../styles/commons/HeaderStyled'
 
 const Header = () => {
   return (
-    <LogoDiv>
-      <div className="bebas-neue-regular">
+    <HeaderDiv>
+      <LogoDiv>
         <Logo />
-      </div>
-      <div className='btn-div'>
+      </LogoDiv>
+      <LoginDiv>
         <LoginBtn />
-      </div>  
-    </LogoDiv>
+      </LoginDiv>  
+    </HeaderDiv>
   )
 }
 

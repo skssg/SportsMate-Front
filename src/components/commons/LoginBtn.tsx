@@ -1,11 +1,11 @@
 import React from 'react'
-import LoginImg from '../../images/commons/LoginBtn.png'
+import { LoginImg } from '../../styles/commons/HeaderStyled'
 
 const LoginBtn = () => {
   return (
-    <div className='login-div'>
-      <img src={LoginImg} alt="loginBtn" />
-    </div>
+    <>
+      <LoginImg />
+    </>
   )
 }
 

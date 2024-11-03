@@ -1,10 +1,11 @@
 import React from 'react'
+import { SearchDiv, SearchInput } from '../../styles/commons/SearchBarStyled'
 
 const SearchBar = () => {
   return (
-    <div className='search-div'>
-        <input type="text" placeholder='구장명을 입력해주세요.' />
-    </div>
+    <SearchDiv>
+        <SearchInput />
+    </SearchDiv>
   )
 }
 

@@ -1,10 +1,6 @@
-.bot-menu img{
-    padding: 0;
-    width: 30px;
-    height: 30px;
-}
+import styled from "styled-components";
 
-.bot-menu {
+export const BotMenu = styled.div`
     display: flex;
     justify-content: space-between;
     width: calc(100% - 30px);
@@ -15,10 +11,18 @@
     position: fixed;
     bottom: 0;
     background: white;
-}
+`
 
-.bot-btn {
+export const BotBtn = styled.div`
     display: flex;
     flex-direction: column;
     cursor: pointer;
-}
+`
+
+export const BotImg = styled.img.attrs(props => ({
+    src: props.src
+}))`
+    padding: 0;
+    width: 30px;
+    height: 30px;
+`
