@@ -14,7 +14,7 @@ const MainPage = () => {
             {isPC && <Header isPC={isPC}/>}
             {isPC && <Nav/>}
             {isMobile && <HeaderMobile/>}
-            {isMobile && <SearchBar isPC={isPC}/>}
+            {isMobile && <SearchBar isPC={isPC}  width={'100%'}/>}
             {isMobile && <BottomNav/>}
         </Wrap>
     );

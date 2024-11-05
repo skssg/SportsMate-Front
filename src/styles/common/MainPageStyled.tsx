@@ -1,5 +1,12 @@
 import styled from "styled-components";
-
+import LogoFile from '../../images/Logo.png';
+import UserProfile from '../../images/user_profile.png';
+interface UserImgProps {
+    marginRight?: string;
+}
+interface SearchBar{
+    width ?: string;
+}
 export const Wrap = styled.div`
     width: 100%;
     height: 100vh;
@@ -20,8 +27,9 @@ export const LogoDiv = styled.div`
     letter-spacing: 0.2em;
     color: black;
 `
-export const SearchBarWrap = styled.div`
-    width: 60%;
+export const SearchBarWrap = styled.div<SearchBar>`
+    //width: 60%;
+    width: ${(props)=> props.width || '60%'};
     //max-width: 600px;
     min-width: 190px;
     height: 40px;
@@ -32,4 +40,30 @@ export const UserIcon = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+`
+export const HeaderDiv = styled.div`
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+`
+export const LogoImg = styled.img.attrs({
+    src : LogoFile,
+    alt : "",
+})`
+    width: 40px;
+    height: 40px;
+    margin-right: 10px
+`
+export const UserImg = styled.img.attrs<UserImgProps>({
+    src : UserProfile,
+    alt : "",
+})`
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: ${(props) => props.marginRight || '10px'};
 `

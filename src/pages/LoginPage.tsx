@@ -4,6 +4,7 @@ import Header from "../components/common/Header";
 import HeaderMobile from "../components/common/HeaderMobile";
 import BottomNav from "../components/common/BottomNav";
 import {useResponsive} from "../components/common/MediaQuery";
+import Login from "../components/Login";
 
 const LoginPage = () => {
     const {isPC, isMobile} = useResponsive();
@@ -12,7 +13,7 @@ const LoginPage = () => {
             {isPC && <Header isPC={isPC}/>}
             {isMobile && <HeaderMobile/>}
             {isMobile && <BottomNav/>}
-            로그인 페이지
+            {isPC && <Login/>}
         </Wrap>
     );
 };
